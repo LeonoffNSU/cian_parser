@@ -1,0 +1,4 @@
+https://novosibirsk.cian.ru/cat.php?currency=2&deal_type=sale&engine_version=2&maxprice=7500000&minprice=6500001&object_type%5B0%5D=1&offer_type=flat&region=4897&room1=1&room2=1&room3=1&room4=1&room5=1&room6=1&room7=1&room9=1 1428
+https://novosibirsk.cian.ru/cat.php?currency=2&deal_type=sale&engine_version=2&maxprice=9000000&minprice=7500001&object_type%5B0%5D=1&offer_type=flat&region=4897&room1=1&room2=1&room3=1&room4=1&room5=1&room6=1&room7=1&room9=1 1309
+https://novosibirsk.cian.ru/cat.php?currency=2&deal_type=sale&engine_version=2&maxprice=14000000&minprice=9000001&object_type%5B0%5D=1&offer_type=flat&region=4897&room1=1&room2=1&room3=1&room4=1&room5=1&room6=1&room7=1&room9=1 1480
+https://novosibirsk.cian.ru/cat.php?currency=2&deal_type=sale&engine_version=2&maxprice=1000000000&minprice=14000001&object_type%5B0%5D=1&offer_type=flat&region=4897&room1=1&room2=1&room3=1&room4=1&room5=1&room6=1&room7=1&room9=1 924
