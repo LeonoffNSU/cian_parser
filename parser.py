@@ -59,6 +59,6 @@ with open('url.txt', 'r') as url_in:
 
             print(f'Пройдено веб-страниц: {page} из {stop_cycle}')
 
-        print(f'Парсинг завершен, промежуточные данные находятся в файле intermediate_data{str(index + 1)}.json')
-        with open(f'intermediate_data{str(index + 9)}.json', 'w', encoding='utf-8') as f_out:
+        print(f'Парсинг завершен, промежуточные данные находятся в файле intermediate_data{index + 1}.json')
+        with open(f'intermediate_data{index + 1}.json', 'w', encoding='utf-8') as f_out:
             json.dump(all_info, f_out, indent=2, ensure_ascii=False)
