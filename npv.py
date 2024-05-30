@@ -66,66 +66,81 @@ multiplier15 = multiplier14 * ((1 + r15_year / 12) ** 12)
 
 # ладно, пусть будет 15 циклов (копировать - вставить)
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (1 + r1_year / 12) ** month, 2)
+    C_month = round(df['potential_rental_cost'] * 1.0042 ** month / (1 + r1_year / 12) ** month, 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r2_year / 12) ** month) * multiplier1), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** month) / (
+                ((1 + r2_year / 12) ** month) * multiplier1), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r3_year / 12) ** month) * multiplier2), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (12 + month)) / (
+                ((1 + r3_year / 12) ** month) * multiplier2), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r4_year / 12) ** month) * multiplier3), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (24 + month)) / (
+                ((1 + r4_year / 12) ** month) * multiplier3), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r5_year / 12) ** month) * multiplier4), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (36 + month)) / (
+                ((1 + r5_year / 12) ** month) * multiplier4), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r6_year / 12) ** month) * multiplier5), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (48 + month)) / (
+                ((1 + r6_year / 12) ** month) * multiplier5), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r7_year / 12) ** month) * multiplier6), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (60 + month)) / (
+                ((1 + r7_year / 12) ** month) * multiplier6), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r8_year / 12) ** month) * multiplier7), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (72 + month)) / (
+                ((1 + r8_year / 12) ** month) * multiplier7), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r9_year / 12) ** month) * multiplier8), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (84 + month)) / (
+                ((1 + r9_year / 12) ** month) * multiplier8), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r10_year / 12) ** month) * multiplier9), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (96 + month)) / (
+                ((1 + r10_year / 12) ** month) * multiplier9), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r11_year / 12) ** month) * multiplier10), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (108 + month)) / (
+                ((1 + r11_year / 12) ** month) * multiplier10), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r12_year / 12) ** month) * multiplier11), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (120 + month)) / (
+                ((1 + r12_year / 12) ** month) * multiplier11), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r13_year / 12) ** month) * multiplier12), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (132 + month)) / (
+                ((1 + r13_year / 12) ** month) * multiplier12), 2)
     PV += C_month
 
 for month in range(1, 13):
-    C_month = round(df['potential_rental_cost'] / (((1 + r14_year / 12) ** month) * multiplier13), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (144 + month)) / (
+                ((1 + r14_year / 12) ** month) * multiplier13), 2)
     PV += C_month
 
 for month in range(1, 12):  # до 179-го слагаемого, в 180-м нужно добавить future value
-    C_month = round(df['potential_rental_cost'] / (((1 + r15_year / 12) ** month) * multiplier14), 2)
+    C_month = round(df['potential_rental_cost'] * (1.0042 ** 12) * (1.0033 ** (156 + month)) / (
+                ((1 + r15_year / 12) ** month) * multiplier14), 2)
     PV += C_month
 
-last_term = round((df['potential_rental_cost'] + price_year15) / (((1 + r15_year / 12) ** 12) * multiplier14), 2)
+last_term = round((df['potential_rental_cost'] + price_year15) * (1.0042 ** 12) * (1.0033 ** 168) / (
+            ((1 + r15_year / 12) ** 12) * multiplier14), 2)
 PV += last_term
 df['PV'] = PV
 df['NPV'] = df['PV'] - df['PI']
